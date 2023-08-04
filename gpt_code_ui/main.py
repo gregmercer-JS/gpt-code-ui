@@ -8,6 +8,8 @@ import logging
 import asyncio
 import time
 import webbrowser
+import pandas
+import dateparser
 
 from multiprocessing import Process
 

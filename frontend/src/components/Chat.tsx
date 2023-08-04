@@ -94,8 +94,8 @@ function Message(props: {
 
 
 export enum WaitingStates {
-  GeneratingCode = "Generating code",
-  RunningCode = "Running code",
+  GeneratingCode = "Running an analysis on your Amazon business.",
+  RunningCode = "Finishing up.",
   UploadingFile = "Uploading file",
   Idle = "Idle",
 }
