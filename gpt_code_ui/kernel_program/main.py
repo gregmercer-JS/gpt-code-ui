@@ -76,10 +76,12 @@ async def start_snakemq():
         if message["type"] == "status":
             if message["value"] == "ready":
                 logger.debug("Kernel is ready.")
-                result_queue.put({
-                    "value":"Kernel is ready.",
-                    "type": "message"
-                })
+
+                #result_queue.put({
+                #    "value":"Kernel is ready.",
+                #    "type": "message"
+                #})
+
 
         elif message["type"] in ["message", "message_raw", "image/png", "image/jpeg"]:
             # TODO: 1:1 kernel <> channel mapping
