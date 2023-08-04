@@ -41,18 +41,10 @@ function App() {
   let [messages, setMessages] = useState<Array<MessageDict>>(
     Array.from([
       {
-        text: "👋 I'm AI Scout. Your 24/7 business advisor. How can I help?
-        ",
+        text: "👋 I'm AI Scout. Your 24/7 business advisor. How can I help?",
         role: "generator",
         type: "message",
       },
-      ```
-      {
-        text: "If I get stuck just type 'reset' and I'll restart the kernel.",
-        role: "generator",
-        type: "message",
-      },
-      ```
     ])
   );
   let [waitingForSystem, setWaitingForSystem] = useState<WaitingStates>(
